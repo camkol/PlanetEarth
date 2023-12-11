@@ -1,0 +1,137 @@
+$color_1: rgb(0, 22, 219);
+$color_2: rgb(33, 255, 255);
+$color_3: White;
+$color_4: yellow;
+$font-family_1: Montserrat, sans-serif;
+$background-color_1: rgb(12, 137, 141);
+$background-color_2: rgb(145, 214, 214);
+$background-color_3: rgba(0.5, 0.5, 0.5, 0.5);
+
+body {
+  font-family: $font-family_1;
+  font-size: 16px;
+  margin: 0;
+  background-color: $background-color_1;
+}
+.bar {
+  padding-top: 1rem;
+  background-color: $background-color_2;
+  color: $color_1;
+  p {
+    left: 25rem;
+  }
+}
+.intro {
+  height: 30rem;
+  padding-top: 1rem;
+  background-image: url("https://content.codecademy.com/PRO/independent-practice-projects/responsive-meetup-page/img/runner-splash.jpg");
+  background-position: center;
+  background-repeat: none;
+  img {
+    width: 15rem;
+    display: block;
+    margin: auto;
+    margin-top: 5rem;
+  }
+  h1 {
+    color: $color_2;
+    font-size: 2rem;
+    margin-top: 10rem;
+    padding: 2rem;
+    background-color: $background-color_3;
+    text-align: center;
+  }
+}
+ul {
+  list-style: none;
+  margin: 0;
+}
+li {
+  color: $color_1;
+  padding: 0.5rem 1.5rem;
+  margin-right: 1.5rem;
+  display: inline-block;
+}
+.summary {
+  margin: 4em auto;
+  padding: 0 1rem;
+  p {
+    color: $color_3;
+  }
+  h2 {
+    color: $color_4;
+  }
+}
+.testimonial {
+  margin: 4em auto;
+  background-color: $background-color_2;
+  height: 20rem;
+  padding: 0 1rem;
+  padding-top: 1rem;
+  color: $color_4;
+  h1 {
+    font-size: 2.5rem;
+    color: $color_4;
+  }
+}
+.photos {
+  margin: 4em auto;
+  img {
+    width: 30%;
+    margin: 1.5%;
+  }
+}
+.meetup {
+  margin: 4em auto;
+  margin-bottom: 2rem;
+  img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  h1 {
+    color: $color_4;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1048px) {
+  .photos {
+    img {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+@media only screen and (max-width: 640px) {
+  .intro {
+    h1 {
+      margin-top: 2rem;
+    }
+    max-height: 200px;
+  }
+  .photos {
+    img {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  li {
+    display: block;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .testimonial {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  .photos {
+    img {
+      width: 100%;
+    }
+  }
+}

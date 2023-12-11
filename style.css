@@ -1,0 +1,129 @@
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  background-color: rgb(12, 137, 141);
+}
+
+.bar {
+  padding-top: 1rem;
+  background-color: rgb(145, 214, 214);
+  color: rgb(0, 22, 219);
+}
+.bar p {
+  left: 25rem;
+}
+
+.intro {
+  height: 30rem;
+  padding-top: 1rem;
+  background-image: url("https://content.codecademy.com/PRO/independent-practice-projects/responsive-meetup-page/img/runner-splash.jpg");
+  background-position: center;
+  background-repeat: none;
+}
+.intro img {
+  width: 15rem;
+  display: block;
+  margin: auto;
+  margin-top: 5rem;
+}
+.intro h1 {
+  color: rgb(33, 255, 255);
+  font-size: 2rem;
+  margin-top: 10rem;
+  padding: 2rem;
+  background-color: rgba(1, 1, 1, 0.5);
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+li {
+  color: rgb(0, 22, 219);
+  padding: 0.5rem 1.5rem;
+  margin-right: 1.5rem;
+  display: inline-block;
+}
+
+.summary {
+  margin: 4em auto;
+  padding: 0 1rem;
+}
+.summary p {
+  color: White;
+}
+.summary h2 {
+  color: yellow;
+}
+
+.testimonial {
+  margin: 4em auto;
+  background-color: rgb(145, 214, 214);
+  height: 20rem;
+  padding: 0 1rem;
+  padding-top: 1rem;
+  color: yellow;
+}
+.testimonial h1 {
+  font-size: 2.5rem;
+  color: yellow;
+}
+
+.photos {
+  margin: 4em auto;
+}
+.photos img {
+  width: 30%;
+  margin: 1.5%;
+}
+
+.meetup {
+  margin: 4em auto;
+  margin-bottom: 2rem;
+}
+.meetup img {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+.meetup h1 {
+  color: yellow;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1048px) {
+  .photos img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .intro {
+    max-height: 200px;
+  }
+  .intro h1 {
+    margin-top: 2rem;
+  }
+  .photos img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  li {
+    display: block;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .testimonial h1 {
+    font-size: 2rem;
+  }
+  .photos img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
